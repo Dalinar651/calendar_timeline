@@ -126,7 +126,7 @@ class _CalendarTimelineState extends State<CalendarTimeline> {
   /// the days show will be the available
   SizedBox _buildDayList() {
     return SizedBox(
-      height: 75,
+      height: 80,
       child: ScrollablePositionedList.builder(
         itemScrollController: _controllerDay,
         initialScrollIndex: _daySelectedIndex ?? 0,
