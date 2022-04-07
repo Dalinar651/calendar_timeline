@@ -1,3 +1,4 @@
+
 import 'package:calendar_timeline/calendar_timeline.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -56,7 +57,7 @@ class _HomePageState extends State<HomePage> {
               showYears: true,
               initialDate: _selectedDate,
               firstDate: DateTime.now(),
-              lastDate: DateTime.now().add(Duration(days: 365)),
+              lastDate: DateTime.now().add(Duration(days: 365 * 4)),
               onDateSelected: (date) {
                 setState(() {
                   _selectedDate = date;
